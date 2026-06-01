@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    background-color: rgb(41, 21, 21);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+.C_button{
+    
+    justify-content: center;
+    color: black;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: none; /* Remove default border */
+    font-size: 16px; /* Optional: adjust font size */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+.rock, .paper, .scissors {
+    color: black;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: none; /* Remove default border */
+    font-size: 16px; /* Optional: adjust font size */
+    border-radius: 8px; /* Optional: add rounded corners */
+    transition: transform 0.2s ease; /* Smooth transition for the "pop" effect */
+}
+.P_button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.rock:hover, .paper:hover, .scissors:hover {
+    transform: scale(1.1); /* Increases size by 10% on hover */
+}
+p {
+    flex-grow: 1; /* Take up available space */
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 90px;
+}
